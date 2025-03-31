@@ -30,12 +30,3 @@ This is a **To-Do Application** built using **React**. The application allows us
 - **localStorage**: To store tasks persistently in the browser’s local storage.
 
 ---
-
-## Installation
-
-To set up the project locally, follow these steps:
-
-### 1. Clone the repository:
-
-```bash
-git clone https://github.com/username/todo-app.git
