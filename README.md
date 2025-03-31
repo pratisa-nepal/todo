@@ -1,54 +1,41 @@
-# React + TypeScript + Vite
+# To-Do App Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Author: Pratisa Duwadi  
+### University: University of London
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## Expanding the ESLint configuration
+This is a **To-Do Application** built using **React**. The application allows users to manage their daily tasks efficiently by adding, editing, deleting, and marking tasks as completed. It is designed with a clean and interactive user interface and utilizes **React** for managing state and UI updates. The app is simple yet powerful for task management and includes features such as persistent data using **localStorage**.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Add Task**: Users can add new tasks to the to-do list with a simple input field.
+- **Delete Task**: Tasks can be removed from the list.
+- **Mark Task as Complete**: Users can mark tasks as completed, and the UI will reflect this by striking through the text.
+- **Edit Task**: Tasks can be edited by clicking on them and updating the text.
+- **Persistence with localStorage**: Tasks will persist even after page reloads using **localStorage** to save data.
+- **Responsive Design**: The app is fully responsive and works across all screen sizes, from desktop to mobile.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Technologies Used
+
+- **React**: For building the user interface and managing the application state.
+- **JavaScript (ES6)**: For the core functionality of the app.
+- **CSS**: For styling the app and making it responsive.
+- **localStorage**: To store tasks persistently in the browser’s local storage.
+
+---
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+### 1. Clone the repository:
+
+```bash
+git clone https://github.com/username/todo-app.git
