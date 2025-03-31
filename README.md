@@ -1,7 +1,6 @@
 # To-Do App Project
 
 ### Author: Pratisa Duwadi  
-### University: University of London
 
 ---
 
